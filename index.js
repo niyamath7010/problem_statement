@@ -63,31 +63,84 @@ function weakend(n){
 }
 
 //Q5. Write a function ‘weekDay’ that takes n as the input and returns the day associated to it. If n<1 or n>7 then return invalid input. Using If Else only.
-
-        function check(weak){
-                if(weak<8){
-                    return "yes!! 1 to 7 are weakdays"
+        var arr=["monday","tuesday","wednessday","thursday","friday","saturday","sunday","day not found"]
+            function weakdays(days){
+                if(days==1){
+                    console.log(arr[0])
+                }else{
+                    if(days==2){
+                        console.log[1]
+                    }else{
+                        if(days==3){
+                            console.log(arr[2])
+                        }else{
+                            if(days==4){
+                                console.log(arr[3])
+                            }else{
+                                if(days==5){
+                                    console.log(arr[4])
+                                }else{
+                                    if(days==6){
+                                        console.log(arr[5])
+                                    }else{
+                                        if(days==7){
+                                            console.log(arr[6])
+                                        }else{
+                                            if(days>8){
+                                                console.log(arr[7])
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-                else
-                {
-                    return "this a invalid weakdays"
-                }
-        }
+            }
 
+
+
+    //Q6. Write a function ‘weekDay’ that takes n as the input and returns the day associated to it. If n<1 or n>7 then return invalid input. Using ternary operator only.
+
+    var arr=["monday","tuesday","wednessday","thursday","friday","saturday","sunday","day not found"]
+
+    function find(day){
+        (day==1)?console.log(arr[0]):
+        (day==2)?console.log(arr[1]):
+        (day==3)?console.log(arr[2]):
+        (day==4)?console.log(arr[3]):
+        (day==5)?console.log(arr[4]):
+        (day==6)?console.log(arr[5]):
+        (day==7)?console.log(arr[6]):
+        console.log(arr[7])
+    }
+          
+            
    //Q7. WAF to search an element in the array?
 
 
-        var find_array=["niyamath","ayush","danish","virat","dhoni"]
-
-        find_array[1]
+        var arr=["niyamath","ayush","danish","virat","dhoni"]
+            let index=arr.indexOf(1)
+            console.log(index)
         
 
+// Q11. WAF to reverse an array.
+
+ //(a):reverse a string
+
+    let number=[0,1,2,3,4,"javascript"]
+
+    let num=number.reverse();
+
+    console.log(num)
 
 
+//(b):reverse a string and its sentance
 
+let sentance="CSK WON IPL TITLE"
 
-
-
+let csk=sentance.split("").reverse().join('')
+console.log(csk)
 
 
 
